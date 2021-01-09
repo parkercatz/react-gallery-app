@@ -16,6 +16,7 @@ const Main = () => {
     'https://images.dog.ceo/breeds/shiba/shiba-8.jpg',
     'https://images.dog.ceo/breeds/shiba/shiba-9.jpg',
   ]
+  // const urls = null
   return (
     <main>
       <section className="section">
