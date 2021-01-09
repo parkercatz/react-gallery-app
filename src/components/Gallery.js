@@ -1,12 +1,18 @@
 import React from 'react'
 import Image from './Image'
 
-const Gallery = () => {
+const Gallery = (props) => {
+  const { urls } = props
+
   return (
     <div className="columns is-vcentered is-multiline">
-      <div className="column is-3">
-        <Image />
-      </div>
+      {urls.map((url, index) => {
+        return (
+          <div key={index} className="column is-3">
+            <Image src={url} />
+          </div>
+        )
+      })}
     </div>
   )
 }
